@@ -1,10 +1,11 @@
+import useHooks from "../../hooks/useHook2";
 import useInputField from "../../hooks/useInputField";
 
 
 const HookForm = () => {
     const [name, nameOnChange] = useInputField("");
     const [email, emailOnChange] = useInputField("");
-    const [password, passwordOnChange] = useInputField("")
+    const [password, passwordOnChange] = useHooks("");
     const handleSubmit = e => {
         e.preventDefault();
         console.log("submit", name, email, password);

@@ -10,7 +10,7 @@ const Grandpa = ({asset}) => {
             <section className='flex'>
                 <Dad asset={asset}></Dad>
                 <Uncle></Uncle>
-                <Aunt></Aunt>
+                <Aunt asset= {asset}></Aunt>
             </section>
         </div>
     );

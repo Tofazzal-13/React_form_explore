@@ -1,10 +1,14 @@
-import React from 'react';
+import { useContext } from "react";
+import { AssestContext } from "./FamilyTree";
 
-const Bou = ({asset}) => {
+const Bou = ({asset, name}) => {
+
+    const newAsset = useContext(AssestContext)
     return (
         <div>
-            <h3>Bou</h3>
-            <p>{asset}</p>
+            <h3>{name}</h3>
+            <p>Asset: {asset}</p>
+            <p>NewAsset: {newAsset}</p>
         </div>
     );
 };
